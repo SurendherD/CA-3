@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What To  Cook Today ?</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div id="siteName">
+            <p>WHAT TO COOK TODAY ?</p>
+        </div>
+
+        <div id="shortStory">
+            <p>
+                In a cozy kitchen nestled within a bustling city, Mia stood staring at her cookbook, feeling a wave of indecision wash over her. Today, she wanted to cook something extraordinary, something that would surprise her taste buds and challenge her culinary skills.
+
+                After flipping through pages filled with recipes ranging from traditional to exotic, Mia finally settled on a dish she had never attempted before - a Moroccan-inspired lamb tagine. With a determined smile, she gathered the necessary ingredients and set to work.
+
+                As the kitchen filled with the aroma of spices and simmering meat, Mia felt a rush of excitement. She chopped, seasoned, and stirred with precision, following the recipe's instructions closely but also adding her own creative touches along the way.
+
+                Hours later, the tagine was ready. Mia lifted the lid, revealing tender chunks of lamb infused with a harmonious blend of flavors. She took a hesitant bite, her taste buds exploding with delight at the rich, aromatic dish she had created.
+
+                With a sense of accomplishment, Mia realized that cooking wasn't just about following recipes; it was about embracing creativity, taking risks, and exploring new flavors. As she savored each mouthful of her culinary masterpiece, she knew that today's experiment had been a resounding success. And she couldn't wait to embark on her next culinary adventure.
+            </p>
+        </div>
+
+        <div id="searchBox">
+            <input type="search" id="searchbox" placeholder="Search To Cook"><img src="./search.png" alt="searchSymbol" id="searchImage">
+        </div>
+    </div>
+
+    <div class="randomFood">
+        <div>
+            <p id="head">Recipe Of The Day..</p>
+        </div>
+            <div id="randomDish">
+            </div>
+    </div>
+    
+
+    <div class="searchedFood">
+        <div id="searchResult">
+
+        </div>
+    </div>
+
+    <div id="id01" class="popup">
+        <div class="content content2">
+          <header class="w3-container">
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright w3-padding-large"
+              >&times;</span
+            >
+            <h2>Ingredients</h2>
+          </header>
+          <div id="ingredients" class="w3-container"></div>
+        </div>
+      </div>
+</body>
+<script src="./app.js"></script>
+</html>
+
